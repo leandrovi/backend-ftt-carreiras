@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_jobs_jobs",
+  "info": {
+    "name": "jobs",
+    "icon": "book-open"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "email": {
+      "type": "string"
+    },
+    "site": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    }
+  }
+}

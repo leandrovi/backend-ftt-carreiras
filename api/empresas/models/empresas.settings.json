@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "companies",
+  "info": {
+    "name": "Empresas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 400
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "text",
+      "required": true
+    },
+    "interview": {
+      "type": "component",
+      "repeatable": false,
+      "component": "interview.interview"
+    },
+    "jobs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "jobs.jobs"
+    },
+    "company_url": {
+      "type": "string"
+    },
+    "additional_info": {
+      "type": "text"
+    }
+  }
+}

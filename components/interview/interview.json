@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_interview_interviews",
+  "info": {
+    "name": "interview",
+    "icon": "chalkboard-teacher"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "link_1": {
+      "type": "string"
+    },
+    "link_2": {
+      "type": "string"
+    }
+  }
+}
